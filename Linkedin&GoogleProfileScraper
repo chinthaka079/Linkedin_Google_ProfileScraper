@@ -24,7 +24,7 @@ def find_profiles():
         try:
             link = r.find('a', href=True)
             title = None
-            title = r.find('h4')
+            title = r.find('h3')
             
             # returns True if a specified object is of a specified type; Tag in this instance 
             if isinstance(title,Tag):
